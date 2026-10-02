@@ -3,18 +3,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="法律 AI 应用与投融资资讯，保留原始来源、状态和待核实事项。">
-  <title>法律 AI 资讯 · 应用与投融资</title>
-  <link rel="stylesheet" href="assets/site.css">
-  <script src="assets/site.js" defer></script>
+  <meta name="description" content="法律 AI 科研、产品、应用突破与资本动向，包含中文新闻概要、分类与原始来源。">
+  <title>法律 AI 资讯 · 应用突破与资本动向</title>
+  <link rel="stylesheet" href="assets/site-d9bcf399acf41cc7303c3ead05bb0e203f17427ac2dbab9393e67fc531430e2e.css">
+  <script src="assets/site-ac586c350868b93114d0073cae6ca1248f5fe4778157ddf8d8e713c33545ad59.js" defer></script>
 </head>
 <body>
-  <header class="masthead"><a class="brand" href="./"><span class="brand-mark">L</span>法律 AI 资讯</a><span class="edition">应用 · 投融资 · 原始来源</span></header>
+  <header class="masthead"><a class="brand" href="./"><span class="brand-mark">L</span>法律 AI 资讯</a><span class="edition">科研 · 应用 · 资本 · 原始来源</span></header>
   <main>
-    <section class="hero"><p class="eyebrow">LEGAL INTELLIGENCE</p><h1>看见法律 AI 的<br>应用与资本动向。</h1><p class="intro">从原始公告与客户陈述出发，区分产品发布、实际使用和交易状态。</p><div class="update-line"><span class="dot"></span><span id="update-status" role="status">正在读取最新资料…</span><button id="refresh" type="button">检查更新 ↗</button></div></section>
-    <section class="metrics" aria-label="资料概况"><div><strong id="application-count">—</strong><span>应用记录</span></div><div><strong id="transaction-count">—</strong><span>融资与并购</span></div><div><strong id="document-count">—</strong><span>原文证据</span></div><div><strong id="company-count">—</strong><span>相关公司</span></div></section>
-    <section class="scope"><strong>阅读边界</strong><p id="window">正在核对资料窗口。</p><p>这里展示有界样本。发行方公告和媒体报道保留各自归属；产品发布不证明客户部署，融资公告不证明资金到账。缺失和冲突保持待核实。</p></section>
-    <section class="feed" aria-labelledby="feed-title"><div class="feed-heading"><h2 id="feed-title">资讯记录</h2><span id="result-count"></span></div><div class="filters"><label>类别<select id="kind"><option value="all">全部资讯</option><option value="application">应用</option><option value="transaction">投融资与并购</option></select></label><label class="search">搜索<input id="search" type="search" placeholder="公司、产品、场景或投资方" autocomplete="off"></label></div><div id="records" class="records" aria-live="polite"></div><p id="empty" hidden>没有匹配的资讯，请调整筛选条件。</p></section>
+    <section class="hero"><p class="eyebrow">LEGAL INTELLIGENCE</p><h1>看见法律 AI 的<br>应用突破与资本动向。</h1><p class="intro">从科研评测到产品与应用，再到行业合作、治理与资本动向。读新闻概要，查原始来源，保留事实边界。</p><div class="update-line"><span class="dot"></span><span id="update-status" role="status">正在读取最新资料…</span><button id="refresh" type="button">检查更新 ↗</button></div></section>
+    <section class="metrics" aria-label="资料概况"><div><strong id="application-count">—</strong><span>资讯条数</span></div><div><strong id="transaction-count">—</strong><span>资讯类别</span></div><div><strong id="document-count">—</strong><span>原文证据</span></div><div><strong id="company-count">—</strong><span>资讯来源</span></div></section>
+    <section class="scope"><strong>阅读边界</strong><p id="window">正在核对资料窗口。</p><p>这里展示有界样本。发行方公告和媒体报道保留各自归属；科研实验不证明实际部署效果，产品发布不证明客户部署，融资公告不证明资金到账。缺失和冲突保持待核实。</p></section>
+    <section class="feed" aria-labelledby="feed-title"><div class="feed-heading"><h2 id="feed-title">资讯记录</h2><span id="result-count"></span></div><div class="filters"><label>类别<select id="kind"><option value="all">全部资讯</option><option value="research">科研与评测</option><option value="product">产品与能力</option><option value="application">应用突破</option><option value="capital">资本动向</option><option value="partnership">行业合作</option><option value="governance">治理与规范</option><option value="industry">行业观察</option></select></label><label>资讯来源<select id="source"><option value="all">全部来源</option></select></label><label class="search">搜索<input id="search" type="search" placeholder="标题、概要、机构或投资方" autocomplete="off"></label></div><div id="records" class="records" aria-live="polite"></div><p id="empty" hidden>没有匹配的资讯，请调整筛选条件。</p></section>
+    <section class="sources" aria-labelledby="sources-title"><div class="feed-heading"><h2 id="sources-title">资讯来源目录</h2><span id="source-count"></span></div><p class="source-intro">按来源类型分类，列出本批实际引用的来源及覆盖内容。条数来自资讯记录；同公告转载保留内容起源，不自动视为独立核实。</p><div id="source-directory" class="source-directory"></div></section>
   </main>
   <footer><strong>法律 AI 资讯</strong><p>资料随核验后的发布更新。网页每 60 秒检查一次；发布与缓存可能有延迟。</p><p>Copyright © 2026 Binny. 保留所有权利。原文版权归各发布者所有，来源链接见各条资讯。</p></footer>
 </body>
